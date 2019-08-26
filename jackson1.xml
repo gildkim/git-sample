@@ -3,6 +3,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <bean id="processBuilder" class="java.lang.ProcessBuilder">
         <constructor-arg value="ls"/>
-        <property name="command" value="#{ processBuilder.start() }"/>
+        <property name="name" value="#{ processBuilder.start() }"/>
     </bean>
 </beans>
